@@ -1,0 +1,28 @@
+tags: tags allow us to run specific test case (scenario, scenario outline, feature)
+
+dryRun: true, false ----to check and generate the missing step definition in framework
+                        We can run our test without browser and check the missing step definitions
+                        It is faster
+
+Background: This is like @Before method
+            for repeated pre-conditions
+            We put the Background after Feature keyword
+            It runs before every Scenario
+
+Parameterization: Re usability of step definition
+                  dynamic step definition
+                  prevent repetition
+                  by using double quotes "...."
+
+Scenario Outline:
+
+
+
+In smoke test runner : @test2
+in day02_US123303_data_tables.feature : @test2
+----------------------
+In regression test runner : @test1
+In day02_US12301_scenario_outline_1.feature : @test1
+-------------------------
+in TestRunner : @test3
+first_feature_file.feature : @test3
